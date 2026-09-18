@@ -1,14 +1,14 @@
-import { AppSidebar } from "@/components/layout/app-sidebar";
-import { TooltipProvider } from "@/components/ui/tooltip";
+import { AppSidebar } from '@/components/layout/app-sidebar'
+import { TooltipProvider } from '@/components/ui/tooltip'
 
 export default function DashboardLayout({
-  children,
+	children
 }: {
-  children: React.ReactNode;
+	children: React.ReactNode
 }) {
-  return (
-    <TooltipProvider>
-      <AppSidebar>{children}</AppSidebar>
-    </TooltipProvider>
-  );
+	return (
+		<TooltipProvider>
+			<AppSidebar>{children}</AppSidebar>
+		</TooltipProvider>
+	)
 }

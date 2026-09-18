@@ -1,11 +1,11 @@
-import StudentProfilePage from "@/views/student/student-profile-page";
+import StudentProfilePage from '@/views/student/student-profile-page'
 
 export default async function StudentPage({
-  params,
+	params
 }: {
-  params: Promise<{ id: string }>;
+	params: Promise<{ id: string }>
 }) {
-  const { id } = await params;
+	const { id } = await params
 
-  return <StudentProfilePage studentId={id} />;
+	return <StudentProfilePage studentId={id} />
 }
